@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Akakçe Case Study Page</title>
+  </head>
+  <body>
+    <header class="header bg-white shadow-sm">
+      <div class="header__content-wrapper container">
+        <div class="header-left flex items-center">
+          <div class="header__brand-logo">
+            <a href="/">
+              <img src="/assets/brand-logo.png" />
+            </a>
+          </div>
+          <button class="header__category-cta flex justify-center items-center">
+            <div class="header__category-cta__content--mobile">
+              <span class="material-icons material-symbols-outlined">menu</span>
+            </div>
+            <div class="header__category-cta__content">
+              <span>Kategoriler</span>
+              <span class="material-icons material-symbols-outlined">
+                expand_more
+              </span>
+            </div>
+          </button>
+        </div>
+        <div class="header-center">
+          <form action="/search" class="search-form">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Neyi ucuza almak istersin?"
+            />
+            <button title="Arama" class="search-form__search-cta">
+              <span class="material-icons material-symbols-outlined">
+                search
+              </span>
+            </button>
+          </form>
+        </div>
+        <div class="header-right">
+          <a href="/register" class="header-right__register"> Hesap Aç </a>
+          <a href="/login" class="header-right__login"> Giriş Yap </a>
+
+          <span class="header-right__search-icon">
+            <span class="material-icons material-symbols-outlined">
+              search
+            </span>
+          </span>
+
+          <a href="/hesabim" class="header-right__icon">
+            <span
+              class="material-icons material-symbols-outlined"
+              title="Hesabım"
+            >
+              person
+            </span>
+          </a>
+
+          <a
+            href="/takip"
+            class="header-right__icon header-right__notification"
+          >
+            <span
+              class="material-icons material-symbols-outlined"
+              title="Takip Listem"
+            >
+              notifications
+            </span></a
+          >
+        </div>
+      </div>
+    </header>
+    <main class="main container">
+      <div class="breadcrumb-outer-container">
+        <div class="breadcrumb-container">
+          <a href="#" title="Anasayfa">
+            <span class="material-icons material-symbols-outlined"> home </span>
+          </a>
+          <a href="#" title="Elektronik"><span>Elektronik</span></a>
+          <a href="#" title="Küçük Ev Aletleri"
+            ><span>Küçük Ev Aletleri</span></a
+          >
+          <a href="#" title="Süpürme, Yıkama"><span>Süpürme, Yıkama</span></a>
+          <a href="#" title="Robot Süpürge"><span>Robot Süpürge</span></a>
+          <a href="#" title="Roborock Robot Süpürge"
+            ><span>Roborock Robot Süpürge</span></a
+          >
+        </div>
+      </div>
+
+      <section class="product-details__container">
+        <div class="product-details__left">
+          <!-- Carousel start -->
+          <div class="product-details__left-image-container">
+            <div class="product-details__left-image__view-count">
+              <span><strong>124</strong> görüntüleme</span>
+            </div>
+            <div class="product-details__left-image">
+              <img src="/assets//s5-white.png" alt="s5-white image" />
+            </div>
+            <div class="product-details__left-image-navigation">
+              <button>
+                <span class="material-icons material-symbols-outlined">
+                  arrow_back_ios
+                </span>
+              </button>
+              <button>
+                <span class="material-icons material-symbols-outlined">
+                  arrow_forward_ios
+                </span>
+              </button>
+            </div>
+            <button
+              class="product-details__left-image-cta product-details__left-image-bell"
+            >
+              <span class="material-icons material-symbols-outlined">
+                notifications
+              </span>
+            </button>
+            <button
+              class="product-details__left-image-cta product-details__left-image-compare"
+            >
+              <span class="material-icons material-symbols-outlined">
+                compare_arrows
+              </span>
+            </button>
+          </div>
+          <!-- Carousel thumbnail start -->
+          <div class="product-details__left-image__thumbnails-container">
+            <div
+              class="product-details__left-image__thumbnail product-details__left-image__thumbnail--active"
+            >
+              <img src="/assets/s5-white.png" alt="" />
+            </div>
+            <div class="product-details__left-image__thumbnail">
+              <img src="/assets/s5-white.png" alt="" />
+            </div>
+            <div class="product-details__left-image__thumbnail">
+              <img src="/assets/s5-white.png" alt="" />
+            </div>
+            <div class="product-details__left-image__thumbnail">
+              <img src="/assets/s5-white.png" alt="" />
+            </div>
+            <button class="product-details__left-image__thumbnail-next">
+              <span class="material-icons material-symbols-outlined">
+                arrow_forward_ios
+              </span>
+            </button>
+          </div>
+
+          <div class="product-details__left-image__option-container">
+            <p>Renk seçenekleri</p>
+            <div class="flex">
+              <button
+                class="product-details__left-image__option product-details__left-image__option--active"
+              >
+                <img src="/assets/s5-white.png" alt="image" />
+                <span>Beyaz</span>
+              </button>
+              <button class="product-details__left-image__option">
+                <img src="/assets/s5-black.webp" alt="image" />
+                <span>Siyah</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-details__right">
+          <div class="product-details__right-title-container">
+            <h2 class="product-details__right-title">
+              Roborock S5 Max Vacuum Cleaner Akıllı Robot Süpürge
+            </h2>
+            <div class="product-details__right-subtitle">
+              <span
+                class="product-details__right-subtitle__medal material-icons material-symbols-outlined"
+              >
+                workspace_premium
+              </span>
+              <span class="product-details__right-subtitle__text"
+                >Süpürge kategorisinde</span
+              >
+              <span class="product-details__right-subtitle__tag"
+                >En çok satan <strong>#2</strong></span
+              >
+            </div>
+          </div>
+          <div class="product-details__right-rating-user__container">
+            <div class="product-details__right-rating__container">
+              <p class="product-details__right-rating">
+                <span class="product-details__right-rating__number">4.7</span>
+                <span class="material-icons material-symbols-outlined">
+                  star
+                </span>
+                <span class="material-icons material-symbols-outlined">
+                  star
+                </span>
+                <span class="material-icons material-symbols-outlined">
+                  star
+                </span>
+                <span class="material-icons material-symbols-outlined">
+                  star
+                </span>
+                <span class="material-icons material-symbols-outlined">
+                  star_half
+                </span>
+              </p>
+              <a href="#"><span>40 değerlendirme</span></a>
+            </div>
+            <div class="product-details__right-user-photos__container">
+              <a href="#"><span>Kullanıcı Fotoğrafları</span></a>
+
+              <button class="product-details__right-user-photo">
+                <img src="/assets/s5-white.png" alt="user photo" />
+              </button>
+
+              <button class="product-details__right-user-photo">
+                <img src="/assets/s5-white.png" alt="user photo" />
+              </button>
+
+              <button
+                class="product-details__right-user-photo product-details__right-user-photo__add-btn"
+              >
+                <span class="material-icons material-symbols-outlined">
+                  add
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="product-details__right-cheapest-banner__container">
+            <div class="product-details__right-cheapest-banner__left-container">
+              <p class="product-details__right-cheapest-banner__left-update">
+                Son güncelleme: 11 dk.
+              </p>
+              <p class="product-details__right-cheapest-banner__left-price">
+                25.649,<span>00 TL</span>
+              </p>
+              <p class="product-details__right-cheapest-banner__left-ship">
+                Ücretsiz Kargo
+              </p>
+            </div>
+            <div
+              class="product-details__right-cheapest-banner__right-container"
+            >
+              <div
+                class="product-details__right-cheapest-banner__right-cheapest-seller"
+              >
+                <span>En ucuz:</span>
+                <img src="/assets/pttavm.webp" alt="pttavm logo" />
+              </div>
+              <a href="#">
+                <span class="material-icons material-symbols-outlined">
+                  open_in_new
+                </span>
+                <span>Satıcıya Git</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
