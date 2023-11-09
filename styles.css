@@ -245,6 +245,8 @@ ul {
 
 .main {
   padding: 4.5rem 1rem 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
 }
 
 .breadcrumb-outer-container {
@@ -800,6 +802,10 @@ ul {
   font-size: 20px;
 }
 
+.tab-offers__title > h3 {
+  font-size: 20px;
+}
+
 .product-specs__container-mobile-cta {
   display: flex;
   align-items: center;
@@ -890,8 +896,12 @@ ul {
 }
 
 @media (max-width: 576px) {
+  body {
+    background-color: #ffffff;
+  }
   .main {
     padding: 4.5rem 0 0 0;
+    margin: 0 auto 9rem;
   }
 
   .header__category-cta {
@@ -983,12 +993,31 @@ ul {
     color: #ffffff;
   }
 
-  .product-details__right-cheapest-banner__left-price {
+  .product-details__right-cheapest-banner__left-price,
+  .product-details__right-offer__-price {
     font-size: 16px;
-    text-align: end;
   }
 
-  .product-details__right-cheapest-banner__left-price > span {
+  .product-details__right-cheapest-banner__left-update,
+  .product-details__right-cheapest-banner__left-ship {
+    font-size: 13px;
+  }
+
+  .product-details__right-cheapest-banner__right-cheapest-seller > img {
+    width: 4.5rem;
+  }
+
+  .product-details__right-cheapest-banner__right-container > a {
+    padding: 0.5rem;
+  }
+
+  .product-details__right-cheapest-banner__right-container > a > span {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .product-details__right-cheapest-banner__left-price > span,
+  .product-details__right-offer__-price > span {
     font-size: 14px;
   }
 
