@@ -930,6 +930,10 @@ ul {
     display: none;
   }
 
+  .tab-offer {
+    padding: 0.75rem 1rem;
+  }
+
   .product-details__left-image-container {
     background-color: #e9f1f8;
     padding: 6rem 1rem;
@@ -961,6 +965,10 @@ ul {
 
   .product-details__left-image-bullets > button:first-of-type {
     background-color: #247ec5;
+  }
+
+  .product-details__left-image-bell {
+    display: none;
   }
 
   .product-details__right-subtitle {
@@ -1019,6 +1027,10 @@ ul {
   .product-details__right-cheapest-banner__left-price > span,
   .product-details__right-offer__-price > span {
     font-size: 14px;
+  }
+
+  .product-details__right-offer__-price {
+    text-align: end;
   }
 
   .product-details__right-rating__container > a > span,
