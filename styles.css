@@ -1,3 +1,22 @@
+/* 
+Production level projelerde Css/Scss değişkenleri ile çalışmak genellikle en iyi uygulamadır.
+Bu case study'de sadece örnek olması niteliğinde renkler üzerinden değişkenler ile çalışılmıştır.
+ */
+
+:root {
+  --color-primary: #247ec5;
+  --color-secondary: #221e20;
+  --color-light-grey: #f2f4f6;
+  --color-grey: #e4e9ee;
+  --color-dark-grey: #505050;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-green: #46c470;
+  --color-yellow: #e4cd03;
+  --color-light-blue: #dfebf6;
+  --color-blue-grey: #839bad;
+}
+
 *,
 *::before,
 *::after {
@@ -11,7 +30,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: #f2f4f6;
+  background-color: var(--color-light-grey);
   font: 14px "Roboto", "Helvetica Neue", sans-serif;
 }
 
@@ -56,7 +75,7 @@ a:hover {
 
 a {
   cursor: pointer;
-  color: #247ec5;
+  color: var(--color-primary);
 }
 
 ul {
@@ -78,7 +97,7 @@ ul {
 }
 
 .bg-white {
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 
 .shadow-sm {
@@ -124,7 +143,7 @@ ul {
 }
 
 .header-right > a {
-  color: #221e20;
+  color: var(--color-secondary);
 }
 
 .header-right__login,
@@ -138,13 +157,13 @@ ul {
 
 .header-right__search-icon {
   display: none;
-  color: #221e20;
+  color: var(--color-secondary);
   width: 40px;
   height: 40px;
 }
 
 .header-right__icon {
-  color: #221e20;
+  color: var(--color-secondary);
   width: 40px;
   height: 40px;
 }
@@ -174,7 +193,7 @@ ul {
 
 .search-form {
   width: 90%;
-  background-color: #f2f4f6;
+  background-color: #var(--color-light-grey);
   position: relative;
   height: 42px;
   border-radius: 6px;
@@ -191,7 +210,7 @@ ul {
 }
 
 .search-form__search-cta:hover {
-  background-color: #dfebf6;
+  background-color: var(--color-light-blue);
 }
 
 .search-form__search-icon > span {
@@ -207,7 +226,7 @@ ul {
   -webkit-appearance: none;
   padding: 10px 61px 10px 15px;
   height: 42px;
-  border: solid 1px #e4e9ee;
+  border: solid 1px var(--color-grey);
   border-radius: 6px;
   font-size: 16px;
   line-height: 22px;
@@ -227,7 +246,7 @@ ul {
 }
 
 .header__category-cta {
-  background-color: #247ec5;
+  background-color: var(--color-primary);
   padding: 9px 10px;
   border-radius: 6px;
 }
@@ -236,7 +255,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .header__category-cta__content--mobile {
@@ -284,7 +303,7 @@ ul {
 
 .product-details__container {
   border-radius: 12px;
-  background-color: #ffffff;
+  background-color: var(--color-white);
   display: flex;
   padding: 1.5rem;
   box-shadow: 0 0 4px #00000007;
@@ -312,7 +331,7 @@ ul {
   position: absolute;
   top: 3rem;
   left: 0;
-  background-color: #839bad;
+  background-color: var(--color-blue-grey);
   padding: 0.5rem 0.75rem;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -339,7 +358,7 @@ ul {
 
 .product-details__left-image-navigation > button > span {
   display: inline-block;
-  color: #247ec5;
+  color: var(--color-primary);
   font-size: 32px;
   padding: 0 0.5rem;
 }
@@ -367,7 +386,7 @@ ul {
 }
 
 .product-details__left-image-cta > span {
-  color: #247ec5;
+  color: var(--color-primary);
   font-size: 32px;
 }
 
@@ -405,7 +424,7 @@ ul {
 }
 
 .product-details__left-image__thumbnail--active {
-  border-color: #247ec5;
+  border-color: var(--color-primary);
 }
 
 .product-details__left-image__thumbnail-next {
@@ -425,7 +444,7 @@ ul {
 }
 
 .product-details__left-image__option-container > p {
-  color: #247ec5;
+  color: var(--color-primary);
   margin-bottom: 0.5rem;
 }
 
@@ -450,7 +469,7 @@ ul {
 
 .product-details__left-image__option > span {
   font-weight: bold;
-  color: #247ec5;
+  color: var(--color-primary);
 }
 
 .product-details__left-image__option--active {
@@ -469,7 +488,7 @@ ul {
 
 .product-details__right-title {
   font-weight: bold;
-  color: #247ec5;
+  color: var(--color-primary);
   font-size: 24px;
   margin-bottom: 1rem;
 }
@@ -484,12 +503,12 @@ ul {
 }
 
 .product-details__right-subtitle__medal {
-  color: #46c470;
+  color: var(--color-green);
 }
 
 .product-details__right-subtitle__tag {
   padding: 0.5rem 0.75rem;
-  background-color: #46c470;
+  background-color: var(--color-green);
   color: white;
   border-radius: 6px;
 }
@@ -516,13 +535,13 @@ ul {
 .product-details__right-user-photos__container > a {
   text-decoration: underline;
   font-size: 16px;
-  color: #505050;
+  color: var(--color-dark-grey);
 }
 
 .product-details__right-rating {
   display: flex;
   align-items: flex-end;
-  color: #e4cd03;
+  color: var(--color-yellow);
   margin-right: 1rem;
 }
 
@@ -561,7 +580,7 @@ ul {
 
 .product-details__right-cheapest-banner__container {
   border-radius: 12px;
-  background-color: #247ec5;
+  background-color: var(--color-primary);
   padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -576,7 +595,7 @@ ul {
 }
 
 .product-details__right-cheapest-banner__right-cheapest-seller > span {
-  color: #ffffff;
+  color: var(--color-white);
 }
 .product-details__right-cheapest-banner__right-cheapest-seller > img {
   width: 6rem;
@@ -585,7 +604,7 @@ ul {
 }
 
 .product-details__right-cheapest-banner__right-container > a {
-  background-color: #ffffff;
+  background-color: var(--color-white);
   padding: 0.5rem 1rem;
   border-radius: 6px;
   display: flex;
@@ -603,7 +622,7 @@ ul {
 }
 
 .product-details__right-cheapest-banner__left-container > p {
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .product-details__right-cheapest-banner__left-container > p:not(:last-of-type) {
@@ -619,7 +638,7 @@ ul {
 }
 
 .product-details__right-cheapest-banner__eta {
-  color: #247ec5;
+  color: var(--color-primary);
   text-align: end;
 }
 
@@ -632,7 +651,7 @@ ul {
 
 .tabs [class^="tab"] label,
 .tabs [class*=" tab"] label {
-  color: #247ec5;
+  color: var(--color-primary);
   cursor: pointer;
   display: block;
   font-size: 18px;
@@ -659,12 +678,12 @@ ul {
 
 .tabs [class^="tab"] [type="radio"]:focus,
 .tabs [class*=" tab"] [type="radio"]:focus {
-  border-bottom: 3px solid #247ec5;
+  border-bottom: 3px solid var(--color-primary);
 }
 
 .tabs [class^="tab"] [type="radio"]:checked,
 .tabs [class*=" tab"] [type="radio"]:checked {
-  border-bottom: 3px solid #247ec5;
+  border-bottom: 3px solid var(--color-primary);
 }
 
 .tabs [class^="tab"] [type="radio"]:checked + div,
@@ -718,7 +737,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 1.5rem;
-  background-color: #ffffff;
+  background-color: var(--color-white);
   border-radius: 10px;
   box-shadow: 0 0 8px 0 #00000025;
 }
@@ -729,11 +748,11 @@ ul {
 }
 
 .tab-offer > p {
-  color: #221e20;
+  color: var(--color-secondary);
 }
 
 .tab-offer .material-icons {
-  color: #247ec5;
+  color: var(--color-primary);
   font-size: 18px;
 }
 
@@ -753,8 +772,8 @@ ul {
 }
 
 .tab-offers__pagination-item--active > a {
-  border-color: #247ec5;
-  color: #221e20;
+  border-color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .tab-offers__pagination-item > button {
@@ -783,13 +802,13 @@ ul {
 }
 
 .product-specs__item-value {
-  color: #247ec5;
+  color: var(--color-primary);
   font-weight: 600;
   text-align: end;
 }
 
 .product-specs__item > .material-icons {
-  color: #46c470;
+  color: var(--color-green);
 }
 
 .product-specs__container {
@@ -813,7 +832,7 @@ ul {
 }
 
 .product-specs__container-mobile-cta > button {
-  color: #247ec5;
+  color: var(--color-primary);
   text-decoration: underline;
 }
 
@@ -897,7 +916,7 @@ ul {
 
 @media (max-width: 576px) {
   body {
-    background-color: #ffffff;
+    background-color: var(--color-white);
   }
   .main {
     padding: 4.5rem 0 0 0;
@@ -964,7 +983,7 @@ ul {
   }
 
   .product-details__left-image-bullets > button:first-of-type {
-    background-color: #247ec5;
+    background-color: var(--color-primary);
   }
 
   .product-details__left-image-bell {
@@ -998,7 +1017,7 @@ ul {
     text-align: center;
     background-color: #19629990;
     padding: 0.5rem 0;
-    color: #ffffff;
+    color: var(--color-white);
   }
 
   .product-details__right-cheapest-banner__left-price,
