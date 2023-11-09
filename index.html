@@ -79,7 +79,7 @@
         </div>
       </div>
     </header>
-    <main class="main container">
+    <main class="main">
       <div class="breadcrumb-outer-container">
         <div class="breadcrumb-container">
           <a href="#" title="Anasayfa">
@@ -118,6 +118,11 @@
                   arrow_forward_ios
                 </span>
               </button>
+            </div>
+            <div class="product-details__left-image-bullets">
+              <button></button>
+              <button></button>
+              <button></button>
             </div>
             <button
               class="product-details__left-image-cta product-details__left-image-bell"
@@ -192,6 +197,7 @@
               >
             </div>
           </div>
+
           <div class="product-details__right-rating-user__container">
             <div class="product-details__right-rating__container">
               <p class="product-details__right-rating">
@@ -217,50 +223,339 @@
             <div class="product-details__right-user-photos__container">
               <a href="#"><span>Kullanıcı Fotoğrafları</span></a>
 
-              <button class="product-details__right-user-photo">
-                <img src="/assets/s5-white.png" alt="user photo" />
-              </button>
+              <div class="flex">
+                <button class="product-details__right-user-photo">
+                  <img src="/assets/s5-white.png" alt="user photo" />
+                </button>
 
-              <button class="product-details__right-user-photo">
-                <img src="/assets/s5-white.png" alt="user photo" />
-              </button>
+                <button class="product-details__right-user-photo">
+                  <img src="/assets/s5-white.png" alt="user photo" />
+                </button>
 
-              <button
-                class="product-details__right-user-photo product-details__right-user-photo__add-btn"
-              >
-                <span class="material-icons material-symbols-outlined">
-                  add
-                </span>
-              </button>
+                <button
+                  class="product-details__right-user-photo product-details__right-user-photo__add-btn"
+                >
+                  <span class="material-icons material-symbols-outlined">
+                    add
+                  </span>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="product-details__right-cheapest-banner__container">
-            <div class="product-details__right-cheapest-banner__left-container">
-              <p class="product-details__right-cheapest-banner__left-update">
-                Son güncelleme: 11 dk.
-              </p>
-              <p class="product-details__right-cheapest-banner__left-price">
-                25.649,<span>00 TL</span>
-              </p>
-              <p class="product-details__right-cheapest-banner__left-ship">
-                Ücretsiz Kargo
-              </p>
-            </div>
-            <div
-              class="product-details__right-cheapest-banner__right-container"
-            >
+
+          <div class="product-details__right-cheapest-banner__outer-container">
+            <div class="product-details__right-cheapest-banner__container">
               <div
-                class="product-details__right-cheapest-banner__right-cheapest-seller"
+                class="product-details__right-cheapest-banner__left-container"
               >
-                <span>En ucuz:</span>
-                <img src="/assets/pttavm.webp" alt="pttavm logo" />
+                <p class="product-details__right-cheapest-banner__left-update">
+                  Son güncelleme: 11 dk.
+                </p>
+                <p class="product-details__right-cheapest-banner__left-price">
+                  25.649,<span>00 <strong>TL</strong></span>
+                </p>
+                <p class="product-details__right-cheapest-banner__left-ship">
+                  Ücretsiz Kargo
+                </p>
               </div>
-              <a href="#">
+              <div
+                class="product-details__right-cheapest-banner__right-container"
+              >
+                <div
+                  class="product-details__right-cheapest-banner__right-cheapest-seller"
+                >
+                  <span>En ucuz:</span>
+                  <img src="/assets/pttavm.webp" alt="pttavm logo" />
+                </div>
+
+                <a href="#">
+                  <span class="material-icons material-symbols-outlined">
+                    open_in_new
+                  </span>
+                  <span
+                    class="product-details__right-cheapest-banner__right__cta-text"
+                    >Satıcıya Git</span
+                  >
+                </a>
+              </div>
+            </div>
+            <p class="product-details__right-cheapest-banner__eta">
+              Tahmini kargoya veriliş süresi: 5 gün içinde
+            </p>
+          </div>
+
+          <div class="tabs">
+            <div class="tab-2">
+              <label for="tab2-1">Ürün Özellikleri</label>
+              <input
+                id="tab2-1"
+                name="tabs-two"
+                type="radio"
+                checked="checked"
+              />
+              <div class="tab-product-specs">
+                <div class="product-specs__item">
+                  <span class="product-specs__item-text">Wifi</span>
+                  <span class="material-icons material-symbols-outlined">
+                    check_circle
+                  </span>
+                </div>
+
+                <div class="product-specs__item">
+                  <span class="product-specs__item-text">Pil Kapasitesi</span>
+                  <span class="product-specs__item-value"> 2500 mAh </span>
+                </div>
+
+                <div class="product-specs__item">
+                  <span class="product-specs__item-text">Çalışma Süresi</span>
+                  <span class="product-specs__item-value"> 180 dk </span>
+                </div>
+
+                <div class="product-specs__item">
+                  <span class="product-specs__item-text">Navigasyon</span>
+                  <span class="material-icons material-symbols-outlined">
+                    check_circle
+                  </span>
+                </div>
+
+                <div class="product-specs__item">
+                  <span class="product-specs__item-text">Şarj Süresi</span>
+                  <span class="product-specs__item-value"> 2,5 saat </span>
+                </div>
+
+                <div class="product-specs__item">
+                  <span class="product-specs__item-text">Sensör Sayısı</span>
+                  <span class="product-specs__item-value"> 14 adet </span>
+                </div>
+
+                <div class="product-specs__item">
+                  <span class="product-specs__item-text">Kir Algılama</span>
+                  <span class="material-icons material-symbols-outlined">
+                    check_circle
+                  </span>
+                </div>
+                <div class="product-specs__item">
+                  <span class="product-specs__item-text">Süpürme ve Silme</span>
+                  <span class="material-icons material-symbols-outlined">
+                    check_circle
+                  </span>
+                </div>
+                <div class="product-specs__item">
+                  <span class="product-specs__item-text">Otomatik Şarj</span>
+                  <span class="material-icons material-symbols-outlined">
+                    check_circle
+                  </span>
+                </div>
+                <div class="product-specs__item">
+                  <span class="product-specs__item-text">Ağırlık</span>
+                  <span class="product-specs__item-value">3.50 kg</span>
+                </div>
+                <div class="product-specs__item">
+                  <span class="product-specs__item-text">Ses Seviyesi</span>
+                  <span class="product-specs__item-value">70 dB</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-2">
+              <label for="tab2-2">Fiyat Teklifleri</label>
+              <input id="tab2-2" name="tabs-two" type="radio" />
+              <div class="tab-offers">
+                <p class="tab-offers__last-updated">Son güncelleme: 5dk önce</p>
+
+                <div class="tab-offers__container">
+                  <a href="#" class="tab-offer">
+                    <img src="/assets/pttavm.webp" alt="" />
+                    <p
+                      class="product-details__right-cheapest-banner__left-price"
+                    >
+                      26.000,<span>00 <strong>TL</strong></span>
+                      <span class="material-icons material-symbols-outlined">
+                        open_in_new
+                      </span>
+                    </p>
+                  </a>
+                  <a href="#" class="tab-offer">
+                    <img src="/assets/trendyol.png" alt="" />
+                    <p
+                      class="product-details__right-cheapest-banner__left-price"
+                    >
+                      26.000,<span>00 <strong>TL</strong> + Kargo</span>
+                      <span class="material-icons material-symbols-outlined">
+                        open_in_new
+                      </span>
+                    </p>
+                  </a>
+                  <a href="#" class="tab-offer">
+                    <img src="/assets/hepsiburada.png" alt="" />
+                    <p
+                      class="product-details__right-cheapest-banner__left-price"
+                    >
+                      27.000,<span>00 <strong>TL</strong> + Kargo</span>
+                      <span class="material-icons material-symbols-outlined">
+                        open_in_new
+                      </span>
+                    </p>
+                  </a>
+                  <a href="#" class="tab-offer">
+                    <img src="/assets/n11.png" alt="" />
+                    <p
+                      class="product-details__right-cheapest-banner__left-price"
+                    >
+                      27.250,<span>00 <strong>TL</strong> + Kargo</span>
+                      <span class="material-icons material-symbols-outlined">
+                        open_in_new
+                      </span>
+                    </p>
+                  </a>
+                  <a href="#" class="tab-offer">
+                    <img src="/assets/pasaj.webp" alt="" />
+                    <p
+                      class="product-details__right-cheapest-banner__left-price"
+                    >
+                      27.499,<span>00 <strong>TL</strong> + Kargo</span>
+                      <span class="material-icons material-symbols-outlined">
+                        open_in_new
+                      </span>
+                    </p>
+                  </a>
+                </div>
+                <ul class="tab-offers__pagination">
+                  <li
+                    href="#"
+                    class="tab-offers__pagination-item tab-offers__pagination-item--active"
+                  >
+                    <a href="#">1</a>
+                  </li>
+                  <li href="#" class="tab-offers__pagination-item">
+                    <a href="#">2</a>
+                  </li>
+                  <li href="#" class="tab-offers__pagination-item">
+                    <button>></button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="tab-2">
+              <label for="tab2-3">Fiyat Değişimi Grafiği</label>
+              <input id="tab2-3" name="tabs-two" type="radio" />
+              <div>
+                <p>Bu ürünün fiyatında henüz bir değişiklik yok.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-specs__container">
+            <h3>Ürün Özellikleri</h3>
+            <div class="tab-product-specs">
+              <div class="product-specs__item">
+                <span class="product-specs__item-text">Wifi</span>
                 <span class="material-icons material-symbols-outlined">
-                  open_in_new
+                  check_circle
                 </span>
-                <span>Satıcıya Git</span>
-              </a>
+              </div>
+
+              <div class="product-specs__item">
+                <span class="product-specs__item-text">Pil Kapasitesi</span>
+                <span class="product-specs__item-value"> 2500 mAh </span>
+              </div>
+
+              <div class="product-specs__item">
+                <span class="product-specs__item-text">Çalışma Süresi</span>
+                <span class="product-specs__item-value"> 180 dk </span>
+              </div>
+
+              <div class="product-specs__item">
+                <span class="product-specs__item-text">Navigasyon</span>
+                <span class="material-icons material-symbols-outlined">
+                  check_circle
+                </span>
+              </div>
+
+              <div class="product-specs__item">
+                <span class="product-specs__item-text">Şarj Süresi</span>
+                <span class="product-specs__item-value"> 2,5 saat </span>
+              </div>
+
+              <div class="product-specs__item">
+                <span class="product-specs__item-text">Sensör Sayısı</span>
+                <span class="product-specs__item-value"> 14 adet </span>
+              </div>
+            </div>
+            <div class="product-specs__container-mobile-cta">
+              <button>15 özelliğin tümünü gör</button>
+            </div>
+          </div>
+
+          <div class="product-offers__container">
+            <div class="tab-offers">
+              <div class="tab-offers__title">
+                <h3>Fiyat Teklifleri</h3>
+                <p class="">Son güncelleme: 5dk önce</p>
+              </div>
+
+              <div class="tab-offers__container">
+                <a href="#" class="tab-offer">
+                  <img src="/assets/pttavm.webp" alt="" />
+                  <p class="product-details__right-cheapest-banner__left-price">
+                    26.000,<span>00 <strong>TL</strong></span>
+                    <span class="material-icons material-symbols-outlined">
+                      open_in_new
+                    </span>
+                  </p>
+                </a>
+                <a href="#" class="tab-offer">
+                  <img src="/assets/trendyol.png" alt="" />
+                  <p class="product-details__right-cheapest-banner__left-price">
+                    26.000,<span>00 <strong>TL</strong> + Kargo</span>
+                    <span class="material-icons material-symbols-outlined">
+                      open_in_new
+                    </span>
+                  </p>
+                </a>
+                <a href="#" class="tab-offer">
+                  <img src="/assets/hepsiburada.png" alt="" />
+                  <p class="product-details__right-cheapest-banner__left-price">
+                    27.000,<span>00 <strong>TL</strong> + Kargo</span>
+                    <span class="material-icons material-symbols-outlined">
+                      open_in_new
+                    </span>
+                  </p>
+                </a>
+                <a href="#" class="tab-offer">
+                  <img src="/assets/n11.png" alt="" />
+                  <p class="product-details__right-cheapest-banner__left-price">
+                    27.250,<span>00 <strong>TL</strong> + Kargo</span>
+                    <span class="material-icons material-symbols-outlined">
+                      open_in_new
+                    </span>
+                  </p>
+                </a>
+                <a href="#" class="tab-offer">
+                  <img src="/assets/pasaj.webp" alt="" />
+                  <p class="product-details__right-cheapest-banner__left-price">
+                    27.499,<span>00 <strong>TL</strong> + Kargo</span>
+                    <span class="material-icons material-symbols-outlined">
+                      open_in_new
+                    </span>
+                  </p>
+                </a>
+              </div>
+              <ul class="tab-offers__pagination">
+                <li
+                  href="#"
+                  class="tab-offers__pagination-item tab-offers__pagination-item--active"
+                >
+                  <a href="#">1</a>
+                </li>
+                <li href="#" class="tab-offers__pagination-item">
+                  <a href="#">2</a>
+                </li>
+                <li href="#" class="tab-offers__pagination-item">
+                  <button>></button>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
