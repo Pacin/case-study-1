@@ -193,7 +193,7 @@ ul {
 
 .search-form {
   width: 90%;
-  background-color: #var(--color-light-grey);
+  background-color: var(--color-light-grey);
   position: relative;
   height: 42px;
   border-radius: 6px;
